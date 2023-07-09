@@ -1,0 +1,9 @@
+:8080 {
+		handle /resource {
+				forward_auth localhost:8880 {
+						uri /
+				}
+
+				respond "Resource X"
+		}
+}
